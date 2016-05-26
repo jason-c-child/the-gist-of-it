@@ -14,5 +14,5 @@ const flattenWidgets = data => {
 }
 
 getWidgets(URL)
-.then((json) => flattenWidgets(json))
+.then(json => flattenWidgets(json))
 .then(v => console.log(v))
