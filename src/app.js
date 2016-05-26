@@ -4,7 +4,7 @@ const URL = 'https://gist.githubusercontent.com/ktilcu/ef1d416279e453389c5d4cf1e
 
 import seed from '../util/dataSeed.json'
 
-const getWidgets = url => fetch(url).then(response => response.json).catch(err => console.log(err))
+const getWidgets = url => fetch(url).then(response => response.json()).catch(err => console.log('error fetching stuff!!', err))
 
 const extractWidgets = data => _.flattenDeep(_.concat(_.keys(seed.sizes).map(k => seed.sizes[k]['frames'].map(frame => frame.widgets), _.keys(seed.sizes).map(k => seed.sizes[k]['background']['widgets']))))
 
@@ -16,5 +16,5 @@ const flattenWidgets = data => {
 }
 
 getWidgets(URL)
-.then(() => flattenWidgets(seed))
+.then((json) => flattenWidgets(json))
 .then(v => console.log(v))
