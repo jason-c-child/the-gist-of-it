@@ -4,7 +4,7 @@ const URL = 'https://gist.githubusercontent.com/ktilcu/ef1d416279e453389c5d4cf1e
 
 const getWidgets = url => fetch(url).then(response => response.json()).catch(err => console.log('error fetching stuff!!', err))
 
-const extractWidgets = data => _.flattenDeep(_.concat(_.keys(seed.sizes).map(k => seed.sizes[k]['frames'].map(frame => frame.widgets), _.keys(seed.sizes).map(k => seed.sizes[k]['background']['widgets']))))
+const extractWidgets = data => _.flattenDeep(_.concat(_.keys(data.sizes).map(k => data.sizes[k]['frames'].map(frame => frame.widgets), _.keys(data.sizes).map(k => data.sizes[k]['background']['widgets']))))
 
 const flattenWidgets = data => {
   let assets = data.assets
