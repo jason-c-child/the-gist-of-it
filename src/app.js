@@ -13,6 +13,12 @@ const flattenWidgets = data => {
   return _.flatten(assets.map(asset => _.filter(widgets, widget => widget['asset-uuid'] === asset.uuid).map(pairing => {return {...asset, ...pairing}})))
 }
 
-getWidgets(URL)
-.then(json => flattenWidgets(json))
-.then(v => console.log(v))
+process.stdin.on('readable', () => {
+  const partial = process.stdin.read()
+  if (partial !== null) {
+    getWidgets(partial.toString())
+    .then(json => flattenWidgets(json))
+    .then(v => console.log(v))
+  }
+})
+
