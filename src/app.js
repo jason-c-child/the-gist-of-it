@@ -7,8 +7,8 @@ const getWidgets = url => fetch(url).then(response => response.json()).catch(err
 const extractWidgets = data => _.flattenDeep(_.concat(_.keys(data.sizes).map(k => data.sizes[k]['frames'].map(frame => frame.widgets), _.keys(data.sizes).map(k => data.sizes[k]['background']['widgets']))))
 
 const flattenWidgets = data => {
-  let assets = data.assets
-  let widgets = extractWidgets(data)
+  const assets = data.assets
+  const widgets = extractWidgets(data)
   
   return _.flatten(assets.map(asset => _.filter(widgets, widget => widget['asset-uuid'] === asset.uuid).map(pairing => {return {...asset, ...pairing}})))
 }
