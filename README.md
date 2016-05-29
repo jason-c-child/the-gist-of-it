@@ -8,6 +8,8 @@ To build, clone, `npm install`, `npm run build`, and transpiled js will be in `/
 
 To run, build first then `npm run start`
 
+To test `npm run test`
+
 ### Runtime options
 
 ```
