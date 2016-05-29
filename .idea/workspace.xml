@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="56e2a7c4-9cdd-45ed-89bc-d367a22f90bb" name="Default" comment="chore: tidy up a little">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/circle.yml" afterPath="$PROJECT_DIR$/circle.yml" />
     </list>
     <ignored path="the_gist_of_it.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,8 +47,8 @@
       <file leaf-file-name="circle.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/circle.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+            <state relative-caret-position="45">
+              <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -365,7 +366,7 @@
       <workItem from="1464300176275" duration="495000" />
       <workItem from="1464300816622" duration="1293000" />
       <workItem from="1464320344087" duration="3088000" />
-      <workItem from="1464487025519" duration="13203000" />
+      <workItem from="1464487025519" duration="13445000" />
     </task>
     <task id="LOCAL-00001" summary="fix: replace 'seed' with 'data' from testing...oops :bomb:">
       <created>1464296098633</created>
@@ -469,7 +470,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24586000" />
+    <option name="totallyTimeSpent" value="24828000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -721,8 +722,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/circle.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        <state relative-caret-position="45">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
           <folding />
         </state>
       </provider>
