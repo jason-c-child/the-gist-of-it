@@ -1,7 +1,13 @@
+import 'babel-polyfill'
 import fetch from 'node-fetch'
 import {errLogger} from './logger'
 import _ from 'lodash'
 
+export const flattenWigdets = async url => {
+  const _widgets = await getWidgets(url)
+  const _flattened = await _flattenWidgets(_widgets)
+  return _flattened
+}
 
 const _flattenWidgets = data => {
     const assets = data.assets

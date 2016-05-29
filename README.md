@@ -7,3 +7,19 @@ Pull some JSON down from a [URL](https://gist.githubusercontent.com/ktilcu/ef1d4
 To build, clone, `npm install`, `npm run build`, and transpiled js will be in `/lib`
 
 To run, build first then `npm run start`
+
+### Runtime options
+
+```
+Avalanche CreativeFamily Widget Flattener
+
+Enter a REST URL endpoint which will return a CreativeFamily JSON file.
+
+
+options:
+
+--url <CreativeFamily JSON url || 'sample'>
+
+--help
+
+```
