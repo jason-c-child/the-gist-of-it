@@ -4,4 +4,4 @@ machine:
 
 dependencies:
   pre:
-    - npm install --dev
+    - npm install --dev && npm install mocha && npm install chai
