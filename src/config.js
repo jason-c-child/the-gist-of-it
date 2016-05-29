@@ -1,5 +1,5 @@
 import _ from 'lodash'
-
+export const SAMPLE_URL = 'https://gist.githubusercontent.com/ktilcu/ef1d416279e453389c5d4cf1e6fb708b/raw/160782d79e83b64da142969ccaa7f9cf1fa16e01/CreativeFamily.json'
 export const PROMPT = 'URL > '
 export const MOTD = [
   'Avalanche CreativeFamily Widget Flattener',
