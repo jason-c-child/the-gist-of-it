@@ -16,10 +16,14 @@
     "build": "babel src -d lib",
     "start": "node lib/app.js"
   },
-  "author": "",
+  "author": "jason-c-child",
+  "repository": "git@github.com:jason-c-child/the-gist-of-it.git",
   "license": "ISC",
   "dependencies": {
+    "chalk": "^1.1.3",
+    "command-line-args": "^2.1.6",
     "lodash": "^4.13.1",
+    "minimist": "^1.2.0",
     "node-fetch": "^1.5.3"
   }
 }
