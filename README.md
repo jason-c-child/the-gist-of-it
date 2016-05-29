@@ -12,14 +12,13 @@ To run, build first then `npm run start`
 
 ```
 Avalanche CreativeFamily Widget Flattener
+v0.5.0
 
-Enter a REST URL endpoint which will return a CreativeFamily JSON file.
+Enter a REST URL endpoint which will return a CreativeFamily JSON file
 
-
+syntax:
+        npm run start -- [options]
 options:
-
---url <CreativeFamily JSON url || 'sample'>
-
---help
-
+        --url <CreativeFamily JSON url || 'sample'>
+        --help
 ```
