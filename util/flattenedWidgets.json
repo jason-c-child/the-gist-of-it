@@ -1,0 +1,162 @@
+{
+"widgets": [
+  {
+    "src": "http://thecatapi.com/api/images/get?format=src&type=gif",
+    "type": "photo",
+    "uuid": "173b72e1-c693-2d34-11a2-e4b114d57330",
+    "asset-uuid": "8e795c96-f3a6-2ecc-26b0-cc80e9a474ba",
+    "height": 45,
+    "left": 116,
+    "width": 204
+  },
+  {
+    "src": "http://thecatapi.com/api/images/get?format=src&type=gif",
+    "type": "photo",
+    "uuid": "6018ccde-ec50-a4ac-c937-c913172d9323",
+    "asset-uuid": "8e795c96-f3a6-2ecc-26b0-cc80e9a474ba",
+    "height": 248,
+    "left": 5,
+    "top": -16,
+    "width": 300
+  },
+  {
+    "color": "#ffffff",
+    "font-family": "Oswald",
+    "font-style": "normal",
+    "font-weight": 400,
+    "letter-spacing": "",
+    "line-height": "",
+    "text": "Thundercats, Thundercats, Thundercats, HO! ",
+    "text-align": "center",
+    "type": "text",
+    "uuid": "217e77e2-1fad-2ed2-e0b9-0fb4fa2c0d85",
+    "asset-uuid": "20aea0a1-142b-98ab-6106-7e94f649ec30",
+    "autosize": false,
+    "font-size": "24",
+    "height": 40,
+    "left": 49,
+    "top": 64,
+    "width": 208
+  },
+  {
+    "src": "http://thecatapi.com/api/images/get?format=src&type=gif",
+    "type": "photo",
+    "uuid": "2c3e86dc-e569-ad1a-a4d7-144a8dde6db7",
+    "asset-uuid": "e06130a8-15eb-ba5d-87fd-cffb25438e02",
+    "height": 45,
+    "left": 116,
+    "width": 204
+  },
+  {
+    "src": "http://thecatapi.com/api/images/get?format=src&type=gif",
+    "type": "photo",
+    "uuid": "de4b0e2b-b325-0760-b559-6adf85c49737",
+    "asset-uuid": "e06130a8-15eb-ba5d-87fd-cffb25438e02",
+    "height": 250,
+    "width": 300
+  },
+  {
+    "type": "shape",
+    "uuid": "3223babd-7337-9587-9597-dfb17e7ef621",
+    "asset-uuid": "9b1c7519-516a-17c3-9e30-1f29c5234f9c",
+    "height": 55,
+    "left": 46,
+    "top": 55,
+    "width": 217
+  },
+  {
+    "src": "http://thecatapi.com/api/images/get?format=src&type=gif",
+    "type": "photo",
+    "uuid": "41143d0a-34a3-5b7b-9b77-d0267a8813e8",
+    "asset-uuid": "42b0e665-afbe-b706-78ed-f63009e4dbb3",
+    "height": 45,
+    "left": 116,
+    "width": 204
+  },
+  {
+    "src": "http://thecatapi.com/api/images/get?format=src&type=gif",
+    "type": "photo",
+    "uuid": "bb3fc7d4-c201-e7e1-06e9-7245e9b1bb8f",
+    "asset-uuid": "42b0e665-afbe-b706-78ed-f63009e4dbb3",
+    "height": 250,
+    "width": 300
+  },
+  {
+    "type": "shape",
+    "uuid": "c57ae6e8-839b-f94e-661d-afd5306ba059",
+    "asset-uuid": "5ba2e80d-5ccb-a111-f4d5-9dd552e14e1a",
+    "height": 100,
+    "left": 22,
+    "static": true,
+    "sync": false,
+    "top": 146,
+    "width": 100
+  },
+  {
+    "type": "shape",
+    "uuid": "6fadb116-aec9-5153-ba86-857affbae6df",
+    "asset-uuid": "5ba2e80d-5ccb-a111-f4d5-9dd552e14e1a",
+    "height": 165,
+    "left": 35,
+    "top": 55,
+    "width": 226
+  },
+  {
+    "color": "#888888",
+    "font-family": "Oswald",
+    "font-style": "normal",
+    "font-weight": 400,
+    "letter-spacing": "",
+    "line-height": "",
+    "text": "Sword Of Omens, give me sight beyond sight.",
+    "text-align": "left",
+    "type": "text",
+    "uuid": "04a88a32-c26e-9a63-1bf7-eb69ab6dbb6a",
+    "asset-uuid": "c1f9847a-7dc9-26d0-affb-4a87206c8ae9",
+    "autosize": false,
+    "font-size": "19",
+    "height": 22,
+    "left": 53,
+    "top": 69,
+    "width": 190
+  },
+  {
+    "color": "#ffffff",
+    "font-family": "Oswald Bold",
+    "font-style": "normal",
+    "font-weight": 400,
+    "letter-spacing": "",
+    "line-height": "",
+    "text": "Snarrrrf",
+    "text-align": "left",
+    "type": "text",
+    "uuid": "42d6a786-6045-5651-f4b2-dec43cd5404f",
+    "asset-uuid": "6f095215-2192-6f51-040a-96ec6284963d",
+    "autosize": false,
+    "font-size": "29",
+    "height": 70,
+    "left": 53,
+    "top": 100,
+    "width": 190
+  },
+  {
+    "color": "#fff",
+    "font-family": "Oswald Light",
+    "font-style": "normal",
+    "font-weight": 400,
+    "letter-spacing": "",
+    "line-height": "",
+    "text": "Ancient spirits of evil, transform this decayed form to MUMM-RA, THE EVER-LIVING!",
+    "text-align": "center",
+    "type": "text",
+    "uuid": "043bb37e-75ee-cd1a-53e9-c2df9bd5ed0f",
+    "asset-uuid": "57508db5-79cb-fe36-20b5-d1b6e9335f9b",
+    "autosize": false,
+    "font-size": "18",
+    "height": 21,
+    "left": 59,
+    "top": 184,
+    "width": 80
+  }
+]
+}
