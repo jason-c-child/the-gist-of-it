@@ -1,15 +1,16 @@
 {
   "name": "the_gist_of_it",
-  "version": "0.0.1",
+  "version": "0.5.0",
   "description": "Parse some json from Avalance",
   "main": "app.js",
   "devDependencies": {
     "babel-cli": "^6.9.0",
-    "babel-preset-es2015": "^6.9.0",
     "babel-plugin-syntax-object-rest-spread": "^6.8.0",
     "babel-plugin-transform-es2015-destructuring": "^6.9.0",
+    "babel-plugin-transform-es2015-spread": "^6.8.0",
     "babel-plugin-transform-object-rest-spread": "^6.8.0",
-    "babel-plugin-transform-es2015-spread": "^6.8.0"
+    "babel-polyfill": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -20,6 +21,8 @@
   "repository": "git@github.com:jason-c-child/the-gist-of-it.git",
   "license": "ISC",
   "dependencies": {
+    "babel-plugin-transform-async-to-generator": "^6.8.0",
+    "babel-plugin-transform-regenerator": "^6.9.0",
     "chalk": "^1.1.3",
     "command-line-args": "^2.1.6",
     "lodash": "^4.13.1",
