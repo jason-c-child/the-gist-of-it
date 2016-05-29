@@ -14,8 +14,7 @@ const _flattenWidgets = data => {
     const widgets = extractWidgets(data)
 
     const _flattened = _.flatten(assets.map(asset => _.filter(widgets, widget => widget['asset-uuid'] === asset.uuid).map(pairing => {return {...asset, ...pairing}})))
-  console.log(_flattened)
-    return _flattened
+    return Promise.resolve(_flattened)
 }
 
 export const getWidgets = url => fetch(url).then(response => response.json()).catch(err => errLogger(err))
