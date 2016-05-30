@@ -13,5 +13,5 @@ export const errLogger = err => {
 
 export const infoLogger = i => {
   console.info(info(i))
-  sentry.captureMessage(i)
+  sentry.captureMessage(i, {level: 'info'})
 }
