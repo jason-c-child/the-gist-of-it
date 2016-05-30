@@ -12,6 +12,6 @@ export const errLogger = err => {
 }
 
 export const infoLogger = i => {
-  raven.captureMessage(i)
   console.info(info(i))
+  sentry.captureMessage(i)
 }
