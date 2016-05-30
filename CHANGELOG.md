@@ -45,11 +45,6 @@
 # [0.5.0](https://github.com/jason-c-child/the-gist-of-it/compare/6ad9918...v0.5.0) (2016-05-29)
 
 
-### Bug Fixes
-
-* read from url stdin ([b2850dd](https://github.com/jason-c-child/the-gist-of-it/commit/b2850dd))
-* replace 'seed' with 'data' from testing...oops :bomb: ([58ced92](https://github.com/jason-c-child/the-gist-of-it/commit/58ced92))
-
 
 ### Features
 
