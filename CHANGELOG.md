@@ -1,3 +1,15 @@
+<a name="0.6.0"></a>
+# [0.6.0](https://github.com/jason-c-child/the-gist-of-it/compare/v0.5.6...v0.6.0) (2016-05-30)
+
+
+### Features
+
+* add sentry support for exception logging ([2e318cc](https://github.com/jason-c-child/the-gist-of-it/commit/2e318cc))
+* link to changelog ([2967f13](https://github.com/jason-c-child/the-gist-of-it/commit/2967f13))
+* pull sample url from config ([97d7c8e](https://github.com/jason-c-child/the-gist-of-it/commit/97d7c8e))
+
+
+
 <a name="0.5.6"></a>
 ## [0.5.6](https://github.com/jason-c-child/the-gist-of-it/compare/v0.5.5...v0.5.6) (2016-05-29)
 
@@ -45,6 +57,11 @@
 # [0.5.0](https://github.com/jason-c-child/the-gist-of-it/compare/6ad9918...v0.5.0) (2016-05-29)
 
 
+### Bug Fixes
+
+* read from url stdin ([b2850dd](https://github.com/jason-c-child/the-gist-of-it/commit/b2850dd))
+* replace 'seed' with 'data' from testing...oops :bomb: ([58ced92](https://github.com/jason-c-child/the-gist-of-it/commit/58ced92))
+
 
 ### Features
 
@@ -55,20 +72,4 @@
 * refactor to use async/await ([b9b1b89](https://github.com/jason-c-child/the-gist-of-it/commit/b9b1b89))
 
 
-<a name="0.0.5"></a>
-# 0.0.5 (2016-05-26)
-### Bug Fixes
-* read from url stdin (b2850dd)
 
-<a name="0.0.1"></a>
-# 0.0.2 (2016-05-26)
-### Bug Fixes
-* replace 'seed' with 'data' from testing...oops :bomb: (58ced92)
-
-<a name="0.0.1"></a>
-# 0.0.1 (2016-05-26)
-
-### Features
-
-* pull from URL via node-fetch; some docs (a46bb73)
-* init project; parse from local seed (6ad9918)
