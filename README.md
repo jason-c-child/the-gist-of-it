@@ -32,7 +32,7 @@ options:
 
 Run `docker build .` to compile a dockerized image. You may want to tag the image with `-t <yourtag>`.
 
-```
+```console
 Jasons-MacBook-Pro:the-gist-of-it-bk jasonchild$ docker build -t the-gist-of-it .
 Sending build context to Docker daemon 33.85 MB
 Step 1 : FROM node:6-onbuild
