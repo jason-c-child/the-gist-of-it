@@ -1,6 +1,6 @@
 {
   "name": "the_gist_of_it",
-  "version": "0.5.5",
+  "version": "0.6.0",
   "dependencies": {
     "amdefine": {
       "version": "1.0.0",
@@ -470,6 +470,11 @@
       "version": "1.2.0",
       "from": "convert-source-map@>=1.1.0 <2.0.0",
       "resolved": "https://registry.npmjs.org/convert-source-map/-/convert-source-map-1.2.0.tgz"
+    },
+    "cookie": {
+      "version": "0.1.0",
+      "from": "cookie@0.1.0",
+      "resolved": "https://registry.npmjs.org/cookie/-/cookie-0.1.0.tgz"
     },
     "core-js": {
       "version": "2.4.0",
@@ -1617,6 +1622,11 @@
       "from": "lru-cache@>=2.0.0 <3.0.0",
       "resolved": "https://registry.npmjs.org/lru-cache/-/lru-cache-2.7.3.tgz"
     },
+    "lsmod": {
+      "version": "1.0.0",
+      "from": "lsmod@1.0.0",
+      "resolved": "https://registry.npmjs.org/lsmod/-/lsmod-1.0.0.tgz"
+    },
     "map-obj": {
       "version": "1.0.1",
       "from": "map-obj@>=1.0.1 <2.0.0",
@@ -1804,6 +1814,11 @@
       "from": "randomatic@>=1.1.3 <2.0.0",
       "resolved": "https://registry.npmjs.org/randomatic/-/randomatic-1.1.5.tgz"
     },
+    "raven": {
+      "version": "0.11.0",
+      "from": "raven@latest",
+      "resolved": "https://registry.npmjs.org/raven/-/raven-0.11.0.tgz"
+    },
     "read-pkg": {
       "version": "1.1.0",
       "from": "read-pkg@>=1.0.0 <2.0.0",
@@ -1969,6 +1984,11 @@
           "resolved": "https://registry.npmjs.org/assert-plus/-/assert-plus-1.0.0.tgz"
         }
       }
+    },
+    "stack-trace": {
+      "version": "0.0.7",
+      "from": "stack-trace@0.0.7",
+      "resolved": "https://registry.npmjs.org/stack-trace/-/stack-trace-0.0.7.tgz"
     },
     "stream-connect": {
       "version": "1.0.2",
