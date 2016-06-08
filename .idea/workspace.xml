@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56e2a7c4-9cdd-45ed-89bc-d367a22f90bb" name="Default" comment="feat: tidy up a little">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/middleware/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/middleware/logger.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/middleware/responseTime.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/app.js" afterPath="$PROJECT_DIR$/lib/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/npm-shrinkwrap.json" afterPath="$PROJECT_DIR$/npm-shrinkwrap.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app.js" afterPath="$PROJECT_DIR$/src/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/widgetHandler.js" afterPath="$PROJECT_DIR$/src/widgetHandler.js" />
     </list>
     <ignored path="the_gist_of_it.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -298,7 +289,7 @@
       <workItem from="1464791839164" duration="182000" />
       <workItem from="1464987248533" duration="964000" />
       <workItem from="1465254008628" duration="489000" />
-      <workItem from="1465346836280" duration="2791000" />
+      <workItem from="1465346836280" duration="2949000" />
     </task>
     <task id="LOCAL-00001" summary="fix: replace 'seed' with 'data' from testing...oops :bomb:">
       <created>1464296098633</created>
@@ -500,7 +491,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39679000" />
+    <option name="totallyTimeSpent" value="39837000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
