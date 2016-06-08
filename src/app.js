@@ -12,18 +12,17 @@ const main = async () => {
   const app = koa()
   let _port = 3000
   const router = koaRouter()
-  
   middlewares.map(m => app.use(m))
 
   if(_args.port) {
     _port = _args.port
   }
 
-  router.post('/flatten', function *(next) {
-    yield next
+  router.post('/flatten', async function (next) {
+    await next
     let _json = {}
     try {
-      _json = yield flattenWigdets(this.request.body)
+      _json = await flattenWigdets(this.request.body)
     } catch (err) {
       errLogger(err)
     }
