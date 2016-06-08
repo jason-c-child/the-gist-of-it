@@ -1,6 +1,6 @@
 {
   "name": "the_gist_of_it",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "Parse some json from Avalance",
   "main": "app.js",
   "devDependencies": {
