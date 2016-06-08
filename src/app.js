@@ -1,32 +1,39 @@
-// sample URL https://gist.githubusercontent.com/ktilcu/ef1d416279e453389c5d4cf1e6fb708b/raw/160782d79e83b64da142969ccaa7f9cf1fa16e01/CreativeFamily.json
 import 'babel-polyfill'
 import minimist from 'minimist'
 import {flattenWigdets} from './widgetHandler'
-import {infoLogger} from './logger'
-import {PROMPT, MOTD, HELP, SAMPLE_URL} from './config'
+import {infoLogger, errLogger} from './logger'
+import koa from 'koa'
+import koaRouter from 'koa-router'
+import {middlewares}  from './middleware'
 
 
 const main = async () => {
   const _args = minimist(process.argv.slice(2))
-  if(_args.help) {
-    HELP.map(m => infoLogger(m))
-    process.exit(0)
+  const app = koa()
+  let _port = 3000
+  const router = koaRouter()
+  
+  middlewares.map(m => app.use(m))
+
+  if(_args.port) {
+    _port = _args.port
   }
-  if(_args.url) {
-    if (_args.url === 'sample') _args.url = SAMPLE_URL
-    const _widgets = await flattenWigdets(_args.url)
-    infoLogger(JSON.stringify(_widgets, null, 2))
-  } else {
-    MOTD.map(m => process.stdout.write(m+'\n'))
-    process.stdout.write(PROMPT)
-    process.stdin.on('readable', async () => {
-      const partial = process.stdin.read()
-      if(partial !== null) {
-        const _widgets = await flattenWigdets(partial.toString())
-        infoLogger(JSON.stringify(_widgets, null, 2))
-      }
-    })
-  }
+
+  router.post('/flatten', function *(next) {
+    yield next
+    let _json = {}
+    try {
+      _json = yield flattenWigdets(this.request.body)
+    } catch (err) {
+      errLogger(err)
+    }
+    this.body = _json
+  })
+  
+  app.use(router.routes())
+  app.use(router.allowedMethods())
+  infoLogger(`Running on port ${_port}`)
+  app.listen(_port)
 }
 
 main()
