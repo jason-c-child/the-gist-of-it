@@ -16,5 +16,5 @@ To test `npm run test`
 
 Specify the portnumber: `npm run start -- --port <number>`
 
-The service implements an endpoint `url:port/flatten` and accepts a JSON payload (creativefamily)
+The service implements an endpoint `url:port/flatten` and accepts a POST with a JSON payload (creativefamily) in the body
 and returns the flattened widgets as a JSON payload. It will return an empty object if no flattenable widgets were found.
