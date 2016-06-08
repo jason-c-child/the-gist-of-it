@@ -1,3 +1,12 @@
+
+<a name="0.7.0"></a>
+# [0.7.0](https://github.com/jason-c-child/the-gist-of-it/compare/v0.6.0...v0.7.0) (2016-06-08)
+
+### Features
+
+* implement as webservice ([cb3a117](https://github.com/jason-c-child/the-gist-of-it/commit/cb3a117))
+
+
 <a name="0.6.0"></a>
 # [0.6.0](https://github.com/jason-c-child/the-gist-of-it/compare/v0.5.6...v0.6.0) (2016-05-30)
 
@@ -30,7 +39,6 @@
 * tweak circleci yml ([852cf6a](https://github.com/jason-c-child/the-gist-of-it/commit/852cf6a))
 * update deps for ci ([d08976c](https://github.com/jason-c-child/the-gist-of-it/commit/d08976c))
 
-
 ### Features
 
 * add ci badge ([b2eb4ab](https://github.com/jason-c-child/the-gist-of-it/commit/b2eb4ab))
@@ -46,7 +54,6 @@
 
 * return a resolved promise from _flattenWidget() ([3ea95d5](https://github.com/jason-c-child/the-gist-of-it/commit/3ea95d5))
 
-
 ### Features
 
 * add some tests ([606ef75](https://github.com/jason-c-child/the-gist-of-it/commit/606ef75))
@@ -61,7 +68,6 @@
 
 * read from url stdin ([b2850dd](https://github.com/jason-c-child/the-gist-of-it/commit/b2850dd))
 * replace 'seed' with 'data' from testing...oops :bomb: ([58ced92](https://github.com/jason-c-child/the-gist-of-it/commit/58ced92))
-
 
 ### Features
 
