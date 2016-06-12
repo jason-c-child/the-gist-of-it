@@ -17,7 +17,7 @@ export const extractWidgets = data => {
       map(k => data.sizes[k]['frames'].map(frame => frame.widgets))(map(k=>k)(_keys)),
       map(k => data.sizes[k]['background']['widgets'])(map(k=>k)(_keys))
     ]
-    return flattenDeep(map(w=>w)(map(e=>e)(_extractions)))
+    return flattenDeep(map(e=>e)(_extractions))
 }
 
 
