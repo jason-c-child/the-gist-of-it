@@ -17,7 +17,8 @@
   "scripts": {
     "test": "npm run build && mocha --compilers js:babel-core/register",
     "build": "babel src -d lib",
-    "start": "node lib/app.js"
+    "start": "node lib/app.js",
+    "clean-start": "npm run build; npm start"
   },
   "author": "jason-c-child",
   "repository": "git@github.com:jason-c-child/the-gist-of-it.git",
