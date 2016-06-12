@@ -1,17 +1,23 @@
 import 'babel-polyfill'
-import _ from 'lodash'
+import map from 'lodash/fp/map'
+import keys from 'lodash/fp/keys'
+import flattenDeep from 'lodash/fp/flattenDeep'
+import flatten from 'lodash/fp/flatten'
+import filter from 'lodash/fp/filter'
 
-export const flattenWigdets = async _json => {
-  const _widgets = await extractWidgets(_json)
-  return await _flattenWidgets(_json.assets, _widgets)
-}
+
+export const flattenWigdets = _json => _flattenWidgets(_json.assets, extractWidgets(_json))
 
 export const _flattenWidgets = (assets, widgets) => 
-  Promise.resolve(_.flatten(assets.map(asset => _.filter(widgets, widget => widget['asset-uuid'] === asset.uuid).map(pairing => {return {...asset, ...pairing}}))))
+  Promise.resolve(flatten(assets.map(asset => (filter(widget => widget['asset-uuid'] === asset.uuid)(widgets)).map(pairing => {return {...asset, ...pairing}}))))
 
 export const extractWidgets = data => {
-    const _keys = _.keys(data.sizes)
-    return _.flattenDeep(_.concat(_keys.map(k => data.sizes[k]['frames'].map(frame => frame.widgets), _keys.map(k => data.sizes[k]['background']['widgets']))))
+    const _keys = keys(data.sizes)
+    const _extractions = [
+      map(k => data.sizes[k]['frames'].map(frame => frame.widgets))(map(k=>k)(_keys)),
+      map(k => data.sizes[k]['background']['widgets'])(map(k=>k)(_keys))
+    ]
+    return flattenDeep(map(w=>w)(map(e=>e)(_extractions)))
 }
 
 
