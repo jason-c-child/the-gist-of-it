@@ -8,16 +8,12 @@ import _ from 'lodash'
 
 describe('widgetHandler', () => {
   describe('extractWidgets', () => {
-    it('extracts the correct number of widgets from seed', async () => {
-      const _widgets = await extractWidgets(seedData)
-      assert.equal(_widgets.length, extractedWidgets.widgets.length)
-    })
-
-    it('extracts the expected widgets', async () => {
-      const _widgets = await extractWidgets(seedData)
-      assert.deepEqual(_widgets, extractedWidgets.widgets)
-    })
+    it('extracts the correct number of widgets from seed', async () =>
+      assert.equal(extractWidgets(seedData).length, extractedWidgets.widgets.length))
+    it('extracts the expected widgets', () =>
+      assert.deepEqual(extractWidgets(seedData), extractedWidgets.widgets))
   })
+
   describe('_flattenWidgets', async () => {
     it('returns a Promise', async () => {
       const _ret = _flattenWidgets(seedData.assets, extractedWidgets.widgets)
